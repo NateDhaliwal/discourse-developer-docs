@@ -37,8 +37,11 @@ id: github-codespaces
 
 The VSCode environment will automatically be configured with our recommended settings and extensions, including automatic linting and formatting.
 
+To minimize usage, make sure to run "Codespaces: Stop Current Codespace" from the command palette (<kbd>Ctrl + Shift + P</kbd>  or <kbd>Cmd + Shift + P</kbd>) when you're finished. If you forget to do this, the Codespace *should* be shut down automatically after your account's configured idle time (default 30 mins). But, there are some situations where the codepace will not be detected as idle, so it's best to stop it deliberately.
+
 # Tips
 
 - You can launch a codespace from specific branches/PRs - just visit it, and press <kbd>,</kbd>
 
 - You can manage all your codespaces at https://github.com/codespaces/
+
