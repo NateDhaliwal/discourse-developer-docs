@@ -6,11 +6,12 @@ id: service-objects
 # Overview
 
 A service is a small object that encompasses business logic for a given action.
-From outside, it should be seen as a sort of black box. You provide it with parameters, it runs, and then it returns a result object describing the outcome of the action.
+From outside, it should be seen as a sort of black box. You provide it with parameters, it runs (including all the side effects it can trigger), and then it returns a result object describing the outcome of the action.
 
 You can think of a service as a conductor of an orchestra, it organizes how things are done and not necessarily does them by itself.
 
-A service object is stateless and has a functional flow control using steps. Everything that happens for a business action will be done in the service, let it be by using specialized steps, custom methods or delegating things to other objects.
+A service object has a functional flow control using steps and while it holds no state between executions, during an execution all state between steps is maintained in its context object.
+Everything that happens for a business action will be done in the service, let it be by using specialized steps, custom methods or delegating things to other objects.
 
 Our service concepts are heavily inspired by [Trailblazer 2.0](https://trailblazer.to/2.0/), [dry-transaction](https://dry-rb.org/gems/dry-transaction) and to a lesser extent [interactor](https://github.com/collectiveidea/interactor).
 
