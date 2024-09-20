@@ -1,5 +1,5 @@
 ---
-title: Using service objects at Discourse
+title: Using service objects in Discourse
 short_title: Service objects
 id: service-objects
 ---
